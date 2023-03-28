@@ -47,6 +47,7 @@ class CustomerController extends Controller
             "lastName"=>['required','min:3'],
             "firstName"=>['required','min:4'],
             "email"=>['required','min:4'],
+            
             "contactNumber"=>['required','min:4'],
             "address"=>['required','min:4'],
         ]);

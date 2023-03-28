@@ -1,5 +1,6 @@
 @include('partials.header')
-<center> <img src="mickey.png" alt=""> </center>
+<center> <img src=" barbie.jfif" alt=""> </center>
+
 
 <h5>FILL THE FORMS TO ADD A NEW RECORD</h5>
 <form action="/saveCustomer" method="POST">
@@ -65,5 +66,5 @@
     
        
 
-    <button type="submit" class="btn btn-dark mb-3">Submit</button>
+    <button type="submit" class="btn btn-danger mb-3">Submit</button>
   </form>

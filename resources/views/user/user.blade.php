@@ -1,6 +1,6 @@
 @include('partials.header')
 <x-nav/>
-<table class="table">
+<table class="table table-danger table-striped">
     <thead>
     <tr>
       <th scope="col">ID</th>

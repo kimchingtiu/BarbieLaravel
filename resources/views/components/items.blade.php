@@ -3,19 +3,19 @@
 </head>
 <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href={{"/"}}>Records</a>
+      <a class="nav-link active" aria-current="page" href={{"/"}}>RECORDS</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-link" href={{"/user"}}>Users</a>
+      <a class="nav-link" href={{"/user"}}>USERS</a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href={{"/addCustomer"}}>Add Record</a>
+      <a class="nav-link" href={{"/addCustomer"}}>ADD RECORD</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href={{"/logout"}}>Logout</a>
+        <a class="nav-link" href={{"/logout"}}>LOGOUT</a>
     </li>
     
   </ul>

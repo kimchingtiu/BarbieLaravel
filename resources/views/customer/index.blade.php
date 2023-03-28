@@ -1,13 +1,14 @@
 
 @include('partials.header')
 <x-nav/>
-<table class="table table-hover">
+<table class="table table-danger table-striped">
+  
   <thead>
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Last Name</th>
       <th scope="col">First Name</th>
-      <th scope="col">EMail</th>
+      <th scope="col">Email</th>
       <th scope="col">Address</th>
       <th></th>
       <th>
