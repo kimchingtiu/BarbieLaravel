@@ -66,7 +66,7 @@ class UserController extends Controller
     }
     
     public function delete($id){
-        $delete = DB::table('customers')
+        $delete = DB::table('products')
         ->where('id', $id)
         ->delete();
         return redirect('/')-> with('success', 'Customer Deleted');

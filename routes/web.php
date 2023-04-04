@@ -18,7 +18,7 @@ Route::get('/', [CustomerController::class, 'index'])->middleware('auth');
 Route::get('/product',[ProductController::class, 'index']);
 Route::get('destroy/{id}',[ProductController::class, 'destroy']);
 Route::get('edits/{id}',[ProductController::class, 'edit']);
-Route::get('updates/{id}',[ProductController::class, 'update']);
+Route::post('updateProduct', [ProductController::class, 'updateProduct'])->middleware('auth');
 
 
 

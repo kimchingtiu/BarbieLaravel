@@ -44,23 +44,34 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit($id)
-    {
-        $data = Product::find($id);
-        return view('product.pedit',compact('data'));
-    }
+    public function edit($id){
+        $data=Product::findOrFail($id);
+        return view('Product.edit',['Product'=>$data]);
+        return redirect('/')-> with('success', 'A record has been edited successfully!');
+     }
+ 
+     public function updateProduct(Request $req){
+         
+           
+        
+             $data=Product::find($req->id);
+             $data->prodName=$req->prodName;
+             $data->prodQuantity=$req->prodQuantity;
+             $data->prodPrice=$req->prodPrice;
+             
+ 
+             $data->save();
+             return redirect('/')-> with('success', 'A record has been edited successfully!');
+ 
+ 
+         
+     
+         }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id)
-    {
-        $data = Product::find($id);
-        $data->prodName = $request->input('prodName');
-        $data->prodQuality = $request->input('prodQuality');
-        $data->prodPrice = $request->input('prodPrice');
-        $data->save();
-    }
+    
 
     /**
      * Remove the specified resource from storage.
