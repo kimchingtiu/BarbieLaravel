@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,13 @@ use App\Http\Controllers\UserController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [CustomerController::class, 'index'])->middleware('auth');
+Route::get('/product',[ProductController::class, 'index']);
+Route::get('destroy/{id}',[ProductController::class, 'destroy']);
+Route::get('edits/{id}',[ProductController::class, 'edit']);
+Route::get('updates/{id}',[ProductController::class, 'update']);
+
+
 
 Route::get('/', [CustomerController::class, 'index'])->middleware('auth');
 Route::get('/addCustomer',[CustomerController::class, 'addCustomer'])->middleware('auth');
